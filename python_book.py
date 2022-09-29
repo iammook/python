@@ -89,7 +89,6 @@
 # print("Avarage score =",avg)
 
 
-
 # ****Check password
 # password = ["1234","1111"]
 # pw = input("Your pasword => ")
@@ -114,6 +113,36 @@
 #         print("It's incorrect, Try again") 
 
 
-97
-104
-110
+
+# ***count string
+# text = input("Enter size of number you want to count: ")
+# print("Len of number is {}".format(len(text)))
+
+
+# ***Decode password
+# pw = input("Enter your password: ")
+# encode = pw[0::2]
+# print("Encode password is:",encode)
+
+
+# *** Check pass test and score test 
+# student_dic = {1:17,2:19,5:18,7:17,8:17,10:19}
+# get_number = int(input("Enter toue number: "))
+# for i in student_dic.keys():
+#     if i == get_number:
+#         print("Congrat you pass the test. you're score =",student_dic.get(i))
+#         break
+# else: 
+#     print("Sorry you arn't pass the test")
+
+
+import datetime 
+from datetime import date,datetime
+from datetime import *
+
+checkday = (2019,7,25)
+dayno = checkday.weekday()
+
+day = {0:'Mon',1:"Thu",2:"Wed",3:"Thu",4:"Fri",5:"Sat",6:"Sun"}
+print(dayno)
+print(checkday.strftime("%a"))
